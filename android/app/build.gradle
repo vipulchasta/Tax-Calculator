@@ -134,8 +134,8 @@ android {
         applicationId "com.bulltronics.tool.planner.tax"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 3
-        versionName "1.03"
+        versionCode project.hasProperty("VERSION_CODE") ? project.VERSION_CODE.toInteger() : 1
+        versionName project.hasProperty("VERSION_NAME") ? project.VERSION_NAME : "1.00"
     }
     splits {
         abi {
