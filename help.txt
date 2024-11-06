@@ -1,0 +1,26 @@
+# Execute Following Command To Run
+npx react-native run-android
+
+# Build Android Bundle
+cd android; ./gradlew bundleRelease
+cd android; ./gradlew assembleRelease
+
+
+npx react-native-rename "Tax Planner" -b com.bulltronics.tool.planner.tax
+
+
+https://askandroidquestions.com/2021/08/05/react-native-0-65-targetsdk30-android-build-is-failing-because-of-react-native-reanimated/
+2 thoughts on - React-native 0.65 (targetSdk=30) android build is failing because of react-native-reanimated
+
+A temporary solution is here:
+Go to the path : node_modules/react-native-reanimated/android/build.gradle
+
+Replace below line
+artifacts.add(“default”, file(“react-native-reanimated-${minor}.aar”))
+
+TO
+artifacts.add(“default”, file(“react-native-reanimated-64.aar”))
+
+Basically, RN 0.65 stable version is recently out, So the other libraries are not maintained as per the recent requirements. You might get new release of react-native-reanimated library with support of RN 0.65.
+
+Thanks 🙂

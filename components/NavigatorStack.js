@@ -15,7 +15,8 @@ export function NavigatorStack() {
     <Stack.Navigator
       initialRouteName="HomeStack"
       screenOptions={{
-                        cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS
+                        cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+                        headerShown: false
                     }}>
       <Stack.Screen name="HomeStack" component={HomePage} options={{title: "Application"}} />
       <Stack.Screen name="AboutStack" component={AboutPage} options={{title: "About"}}/>

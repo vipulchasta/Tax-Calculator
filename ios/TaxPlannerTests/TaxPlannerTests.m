@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface HRATests : XCTestCase
+@interface TaxPlannerTests : XCTestCase
 
 @end
 
-@implementation HRATests
+@implementation TaxPlannerTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {

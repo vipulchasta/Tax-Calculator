@@ -50,6 +50,9 @@ export default function NavigatorDrawer() {
   return (
     <Drawer.Navigator
       initialRouteName="NavigatorStack"
+      screenOptions={{
+        headerShown: true
+      }}
       drawerContent={props => <CustomDrawerContent {...props} />}>
       <Drawer.Screen name="NavigatorStack" component={NavigatorStack} options={{title:"Home"}} />
       <Drawer.Screen name="About" component={AboutPage} options={{title:"About"}} />

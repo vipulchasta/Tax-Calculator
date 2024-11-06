@@ -1,4 +1,4 @@
-package com.hra;
+package com.bulltronics.tool.planner.tax;
 
 import android.app.Application;
 import android.content.Context;
@@ -64,7 +64,7 @@ public class MainApplication extends Application implements ReactApplication {
          We use reflection here to pick up the class that initializes Flipper,
         since Flipper library is not available in release mode
         */
-        Class<?> aClass = Class.forName("com.hra.ReactNativeFlipper");
+        Class<?> aClass = Class.forName("com.bulltronics.tool.planner.tax.ReactNativeFlipper");
         aClass
             .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
             .invoke(null, context, reactInstanceManager);

@@ -1,4 +1,4 @@
-package com.hra;
+package com.bulltronics.tool.planner.tax;
 
 import android.os.Bundle;
 
@@ -14,7 +14,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "HRA";
+    return "TaxPlanner";
   }
 
   @Override
